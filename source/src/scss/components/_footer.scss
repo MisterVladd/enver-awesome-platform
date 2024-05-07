@@ -1,0 +1,61 @@
+.footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 10px;
+	padding-bottom: 50px;
+
+	@include tablet {
+		flex-direction: column;
+		gap: 40px;
+	}
+
+	&__logo {
+		display: inline-flex;
+		gap: 8px;
+		align-items: center;
+		font-family: "Montserrat", sans-serif;
+		font-weight: 700;
+		font-size: 28px;
+		line-height: 140%;
+		color: #fff;
+
+		img {
+			width: 40px;
+			height: 40px;
+		}
+	}
+
+	&__items {
+		display: flex;
+		align-items: center;
+		gap: 40px;
+
+		@include mobile {
+			flex-direction: column;
+		}
+
+	}
+
+	&__link {
+		font-weight: 400;
+		font-size: 18px;
+		color: rgba(255, 255, 255, 0.7);
+	}
+
+	&__copy {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 237%;
+		letter-spacing: -0.03em;
+		color: rgba(255, 255, 255, 0.7);
+
+		@include tablet {
+			font-family: var(--second-family);
+			font-size: 18px;
+			line-height: 156%;
+			text-align: center;
+			color: #fff;
+		}
+	}
+}

@@ -1,0 +1,79 @@
+.portfolio{
+	margin-bottom: 168px;
+	@include mobile{
+		margin-bottom: 140px;
+	}
+}
+
+.container {
+	position: relative;
+
+	.rectangle2 {
+		position: absolute;
+		width: 599.58px;
+		height: 652.85px;
+		top: -33%;
+		right: -26%;
+
+		background: linear-gradient(180deg, rgba(84, 84, 212, 0.2) 0%, rgba(84, 84, 212, 0.084) 100%);
+		border-radius: 233.5px;
+		transform: matrix(-0.58, -0.81, -0.81, 0.58, 0, 0);
+
+		@include mobile {
+			display: none;
+		}
+	}
+
+	.two-circles {
+		position: absolute;
+		top: 4.8%;
+		right: 9.45%;
+		transform: rotate(-27.37deg);
+
+		svg {
+			width: 62px;
+			height: 72.94px;
+		}
+
+		@include mobile {
+			width: 39.37px;
+			height: 46.32px;
+			transform: rotate(-20.89deg);
+		}
+	}
+
+	.snake {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		transform: translate3d(-50%, 100%, 0);
+
+		@include desktop-small {
+			transform: translate3d(0%, 100%, 0);
+			bottom: -8.5%;
+			left: 8.8%;
+		}
+
+		@include mobile {
+			width: 61.07px;
+			height: 18px;
+		}
+
+	}
+
+}
+
+.portfolio-list {
+	margin-top: 70px;
+}
+
+.portfolio-item {
+	padding: 24px;
+	display: inline-flex;
+	border-radius: 14px;
+	background: #1E1E20;
+
+	img {
+		border-radius: 12px;
+	}
+}

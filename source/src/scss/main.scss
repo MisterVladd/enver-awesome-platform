@@ -1,0 +1,22 @@
+// utils
+@import 'utils/vars';
+@import 'utils/mixins';
+// vendors
+@import 'vendors/reset';
+@import 'vendors/carousel';
+
+
+// layout
+@import 'layout/base';
+@import 'layout/scroll';
+@import 'layout/grid';
+
+// components
+@import 'components/header';
+@import 'components/footer';
+@import 'components/service';
+@import 'components/portfolio';
+@import 'components/welcome';
+@import 'components/why';
+@import 'components/contact';
+@import 'components/rectangle';
