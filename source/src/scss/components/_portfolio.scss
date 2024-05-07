@@ -1,6 +1,7 @@
-.portfolio{
+.portfolio {
 	margin-bottom: 168px;
-	@include mobile{
+
+	@include mobile {
 		margin-bottom: 140px;
 	}
 }
@@ -36,9 +37,12 @@
 		}
 
 		@include mobile {
-			width: 39.37px;
-			height: 46.32px;
 			transform: rotate(-20.89deg);
+
+			svg {
+				width: 39.37px;
+				height: 46.32px;
+			}
 		}
 	}
 
@@ -55,8 +59,10 @@
 		}
 
 		@include mobile {
-			width: 61.07px;
-			height: 18px;
+			svg {
+				width: 61.07px;
+				height: 18px;
+			}
 		}
 
 	}
